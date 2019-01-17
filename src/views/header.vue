@@ -7,7 +7,7 @@
 		
 	        <!-- Title 标题-->
 	        <div class="title">
-	          <h1>David Smith</h1>
+	          <h1>ZhuBing</h1>
 	          <span class="h4 element"></span>
 	        </div>
 	        <!-- End of title -->
@@ -31,38 +31,13 @@
 	      <!-- Start skills / expertise 各种技能条-->
 	      <div class="col-lg-6 col-md-12 col-sm-12">
 	        <div class="space">
-	          <h3>EXPERTISE</h3>
-		
-	          <h5>HTML / CSS3</h5>
-	          <div class="progress progress-striped active">
-	            <div class="progress-bar progress-bar-danger" style="width: 90%"></div>
-	          </div>
-		
-	          <h5>Javascript</h5>
-	          <div class="progress progress-striped active">
-	            <div class="progress-bar progress-bar-success" style="width: 85%"></div>
-	          </div>
-		
-	          <h5>PHP</h5>
-	          <div class="progress progress-striped active">
-	            <div class="progress-bar progress-bar-warning" style="width: 80%"></div>
-	          </div>
-		
-	          <h5>Angular JS</h5>
-	          <div class="progress progress-striped active">
-	            <div class="progress-bar progress-bar-default" style="width: 70%"></div>
-	          </div>
-		
-	          <h5>MySQL / NoSQL</h5>
-	          <div class="progress progress-striped active">
-	            <div class="progress-bar progress-bar-success" style="width: 75%"></div>
-	          </div>
-		
-	          <h5>.NET</h5>
-	          <div class="progress progress-striped active">
-	            <div class="progress-bar progress-bar-danger" style="width: 90%"></div>
-	          </div>
-		
+	          <h3>{{mySkills.mytitle}}</h3>
+						<div v-for="(item, index) in mySkills.content" :key="index">
+								<h5>{{item.name}}</h5>
+								<div class="progress progress-striped active">
+									<div class="progress-bar" :class="item.color" :style="item.mywidth"></div>
+								</div>
+						</div>
 	        </div>
 	      </div>
 	      <!-- End of skills / expertise -->
@@ -79,12 +54,45 @@
 	export default {
 		data() {
 			return {
-				
+				mySkills:{
+					mytitle: '我的技能',
+					content:[
+						{
+							name: "HTML / CSS3",
+							mywidth:"width:85%",
+							color:"progress-bar-danger"
+						},
+						{
+							name: "Javascript",
+							mywidth:"width:85%",
+							color:"progress-bar-success"
+						},
+						{
+							name: "PHP",
+							mywidth:"width:75%",
+							color:"progress-bar-warning"
+						},
+						{
+							name: "Vue.js",
+							mywidth:"width:85%",
+						},
+						{
+							name: "MySQL / MongoDB",
+							mywidth:"width:55%",
+							color:"progress-bar-default"
+						},
+						{
+							name: "Node.js",
+							mywidth:"width:65%",
+							color:"progress-bar-success"
+						}
+					]
+				}
 			};
 		}
 	}
 </script>
 
-<style>
-
+<style scope>
+	
 </style>
