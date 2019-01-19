@@ -7,7 +7,13 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  created(){
+    this.$router.push({path:'/'})
+  }
+}
+</script>
 <style lang="less">
 // #app {
 //   //font-family: "Avenir", Helvetica, Arial, sans-serif;

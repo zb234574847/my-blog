@@ -2,6 +2,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/index.vue";
+import classify from "./views/classify.vue"
+import articleList from "./views/articleList.vue"
+import detail from "./views/detail.vue"
 
 Vue.use(Router);
 
@@ -12,8 +15,26 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      children:[
+        {
+          path: "/classify",
+          name: "classifye",
+          component: classify
+        },
+        {
+          path: "/articleList",
+          name: "articleList",
+          component: articleList
+        },
+        {
+          path: "/detail",
+          name: "detail",
+          component: detail
+        },
+      ]
     }
+    
 //     {
 //       path: "/about",
 //       name: "about",
