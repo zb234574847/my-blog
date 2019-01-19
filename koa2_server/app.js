@@ -9,6 +9,16 @@ const logger = require('koa-logger')
 const index = require('./routes/index')
 const users = require('./routes/users')
 
+const mongoose = require('mongoose');
+const config = require('./app/dbconfig/config')
+mongoose.connect(config.db);
+var db = mongoose.connection;
+db.on('open', function () {
+  console.log('连接' + config.db +'数据库成功')
+})
+db.on('error', function () {
+  throw new Error('连接' + config.db +'数据库失败');
+});
 // error handler
 onerror(app)
 

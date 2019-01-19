@@ -54,7 +54,7 @@
 	      <!-- The middle big title  中间的姓名logo -->
 	      <div class="big-title">
 	        <div class="text-center">
-	          <h1>朱  &nbsp;&nbsp;&nbsp;&nbsp; 冰</h1>
+	          <h1>朱&nbsp;&nbsp;&nbsp;&nbsp;冰</h1>
 	          <p>I'm <span class="sub-title"></span></p>
 	        </div>
 	      </div>

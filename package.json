@@ -10,7 +10,7 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "css-loader": "^2.1.0",
-    "jquery": "^1.12.4",
+    "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
     "style-loader": "^0.23.1",
     "vue": "^2.5.21",
