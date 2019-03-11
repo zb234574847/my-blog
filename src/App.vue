@@ -3,16 +3,17 @@
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div> -->
+    </div>-->
     <router-view/>
   </div>
 </template>
 <script>
+/* eslint-disable */
 export default {
-  created(){
-    this.$router.push({path:'/'})
+  created() {
+    this.$router.push({ path: "/" });
   }
-}
+};
 </script>
 <style lang="less">
 // #app {

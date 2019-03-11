@@ -118,9 +118,9 @@ ul.menu-click {
   font-weight: 400;
   position: relative;
   color: #fff;
-  font-size: 60px;
+  font-size: 48px;
   text-align: center;
-  line-height: 98px;
+  line-height: 68px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
@@ -1120,7 +1120,7 @@ body.modal-open .cross-portfolio {
   }
 
   .menu-click li a {
-    font-size: 40px;
-    line-height: 68px;
+    font-size: 25px;
+    line-height: 40px;
   }
 }
